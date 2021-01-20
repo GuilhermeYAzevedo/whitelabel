@@ -1,14 +1,29 @@
-import * as React from 'react';
-import { View, Text, Button } from 'react-native';
+import React from 'react';
+import { useState } from 'react';
+
+import { 
+    Container, 
+    Body,
+    Title, 
+    SubTitle,    
+    ButtonView,
+    SignIn    
+} from './LoginStyle';
 
 export default function Login() {
     return(
-        <View>
-            <Text>Login</Text>
-            {/* <Button 
-            title="Login"
-            onPress={ () => navigation.navigate('Home')}
-            /> */}
-        </View>
+        <Container>
+            <Body>
+                <Title>Let's sign you in.</Title>
+                <SubTitle>Welcome back.</SubTitle>                
+                <SubTitle>You've been missed!</SubTitle>
+            
+                
+            </Body>
+
+            <ButtonView>
+                <SignIn title='SignIn'></SignIn>                
+            </ButtonView>
+        </Container>
     );
 }
